@@ -5,21 +5,21 @@
 class DocopsBeta < Formula
   desc "Typed project-state substrate for LLM-first software development (beta channel)"
   homepage "https://github.com/logicwind/DocOps"
-  version "0.7.1-beta.2"
+  version "0.8.0-beta.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/logicwind/DocOps/releases/download/v0.7.1-beta.2/docops_0.7.1-beta.2_darwin_x86_64.tar.gz"
-      sha256 "a18600b0b06cca8921dbc20bb08f8f9606109ad91be09464799556b0a91f1f23"
+      url "https://github.com/logicwind/DocOps/releases/download/v0.8.0-beta.1/docops_0.8.0-beta.1_darwin_x86_64.tar.gz"
+      sha256 "3506578ede39157e439bb8d4ef2a073fd14f237b950d872352259f75788ed437"
 
       define_method(:install) do
         bin.install "docops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/logicwind/DocOps/releases/download/v0.7.1-beta.2/docops_0.7.1-beta.2_darwin_arm64.tar.gz"
-      sha256 "ad93a131098b4f48ff27369e225a21977fc7e267c67a6cc8813447eb1de0d6e9"
+      url "https://github.com/logicwind/DocOps/releases/download/v0.8.0-beta.1/docops_0.8.0-beta.1_darwin_arm64.tar.gz"
+      sha256 "b0722653a3cb551ac6f5fe05942af066982939f29fec38b68d2c08ea73a4d024"
 
       define_method(:install) do
         bin.install "docops"
@@ -29,15 +29,15 @@ class DocopsBeta < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/logicwind/DocOps/releases/download/v0.7.1-beta.2/docops_0.7.1-beta.2_linux_x86_64.tar.gz"
-      sha256 "425ed5fdb5c8d82e461356a432a876ee564fee673f988a3a6146e5e208056d8e"
+      url "https://github.com/logicwind/DocOps/releases/download/v0.8.0-beta.1/docops_0.8.0-beta.1_linux_x86_64.tar.gz"
+      sha256 "cd3d3a040bdf8b7c885f59062abc2eb121262673f88b7c3c1c1ca2de45a7af8e"
       define_method(:install) do
         bin.install "docops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/logicwind/DocOps/releases/download/v0.7.1-beta.2/docops_0.7.1-beta.2_linux_arm64.tar.gz"
-      sha256 "d39e45a3eb278645781b54d3bbaee85be343e90fa4f6f3c9f2995b1f4f9fcb48"
+      url "https://github.com/logicwind/DocOps/releases/download/v0.8.0-beta.1/docops_0.8.0-beta.1_linux_arm64.tar.gz"
+      sha256 "726fe3363c962b133bb1ca3d429e1aa5a783451491f2fe4f9e4d0bf733da1612"
       define_method(:install) do
         bin.install "docops"
       end
